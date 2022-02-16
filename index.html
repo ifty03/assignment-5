@@ -12,7 +12,63 @@
     <title>5th assignment</title>
 </head>
 <body>
-    
+
+    <!------------
+        header
+    ------------->
+    <header>
+        <h1 class="text-4xl font-bold text-pink-600 text-center mt-5">Money Bank</h1>
+    </header>
+
+    <!-----------------
+        main section
+    ------------------>
+    <main>
+        <section class="grid grid-cols-1 lg:grid-cols-2 mt-10">
+            <div class="w-10/12 mx-auto mb-10 lg:mb-0">
+                <img src="money.jpg" alt="money picture">
+            </div>
+            <div class="w-5/6 mx-auto bg-gray-100">
+                <div class="mt-10 w-4/6 mx-auto ">
+
+                    <!----------------------------
+                         income and cost area
+                    ----------------------------->
+                    <h4 class="text-xl font-bold text-center">Income</h4>
+                    <h3 class="inline-block mt-5">Income:</h3>
+                    <input class="py-2 pl-2 rounded bg-gray-300" type="number" name="" id="total-income">
+                    <h4 class="text-xl font-bold text-center mt-5">Expenses</h4>
+                    <h3 class="inline-block mt-5 mr-5">Food:</h3>
+                    <input class="py-2 pl-2 rounded bg-gray-300" type="number" name="" id="food-cost">
+                    <h3 class="inline-block mt-5 mr-6 mt-7">Rent:</h3>
+                    <input class="py-2 pl-2 rounded bg-gray-300" type="number" name="" id="rent-cost">
+                    <h3 class="inline-block mt-5 mt-7">Clothes:</h3>
+                    <input class="py-2 pl-2 rounded bg-gray-300" type="number" name="" id="cloth-cost">
+
+                    <!----------------------
+                         Calculate button
+                    ----------------------->
+                    <button id="calculate-btn" class="py-2 px-7 bg-blue-400 rounded-lg lg:ml-36 ml-0 mt-5 text-white" >Calculate</button>
+                    
+                    <!---------------------
+                         total Expanses
+                    ---------------------->
+                    <h2 class="text-xl font-bold text-center mt-5">Total Expenses : <span id="total-expanses">00</span></h2>
+                    <h2 class="text-xl font-bold text-center mt-5">Balance : <span id="balance">00</span></h2>
+
+                    <!---------------------
+                        saving area
+                    --------------------->
+                    <h3 class="inline-block mt-5 mt-10">Save:</h3>
+                    <input class="py-2 pl-2 rounded bg-gray-300 lg:w-2/6 w-1/5" type="number" name="" id="saving-input"><h2 class="inline-block text-xl font-bold mx-2">%</h2>
+                    <button id="save-btn" class="py-2 lg:px-5 px-4 bg-blue-400 rounded-lg mt-5 text-white" >Save</button>
+                    <h3 class="text-xl font-bold text-center mt-5">Saving Amount : <span id="saving-amount">00</span></h3>
+                    <h3 class="text-xl font-bold text-center mt-5">Remaining Balance : <span id="remaining-balance">00</span></h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
 
     <script src="money-bank.js"></script>
 </body>

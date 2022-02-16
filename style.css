@@ -1,0 +1,6 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster+Two:ital@1&family=Poppins:wght@500&family=Roboto:wght@500&family=Rokkitt&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
