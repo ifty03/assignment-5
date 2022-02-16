@@ -25,5 +25,13 @@ document.getElementById("calculate-btn").addEventListener("click",function(){
 })
 
 document.getElementById("save-btn").addEventListener("click",function(){
+    const totalIncome = document.getElementById("total-income");
+    const totalIncomeValue = parseFloat(totalIncome.value);
+
+    const savingInput = document.getElementById("saving-input");
+    const savingInputValue = parseFloat(savingInput.value);
     
+    const savingAmount = document.getElementById("saving-amount");
+    const savingAmountValue = savingAmount.innerText = (totalIncomeValue / 100) * savingInputValue;
+    return savingAmountValue;
 })
