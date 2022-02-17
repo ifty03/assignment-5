@@ -102,7 +102,13 @@ document.getElementById("calculate-btn").addEventListener("click",function(){
     call for saving
 ------------------------*/
 document.getElementById("save-btn").addEventListener("click",function(){
-    totalSaving()
+    const savingAmount = getValue("saving-amount");
+    if(savingAmount > 0){
+        totalSaving()
+    }
+    else{
+        alert("sir please write valid parsantage !")
+    }
     forRemaningBalance()
 })
 
