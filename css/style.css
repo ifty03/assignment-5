@@ -4,3 +4,7 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+.error {
+  display: none;
+  font-size: 13px;
+}

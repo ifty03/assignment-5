@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css link -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- link tailwindcss -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -36,14 +36,18 @@
                     ----------------------------->
                     <h4 class="text-xl font-bold text-center">Income</h4>
                     <h3 class="inline-block mt-5">Income:</h3>
-                    <input class="py-2 pl-2 rounded bg-gray-300" type="number" name="" id="total-income">
+                    <input class="py-2 pl-2 rounded bg-gray-300"  type="number" name="" id="total-income">
+                    <p id="error-income" class="text-center text-red-600 error">please type your valid income</p>
                     <h4 class="text-xl font-bold text-center mt-5">Expenses</h4>
                     <h3 class="inline-block mt-5 mr-5">Food:</h3>
                     <input class="py-2 pl-2 rounded bg-gray-300" type="number" name="" id="food-cost"><br>
+                    <p id="error-food" class="text-center text-red-600 error">please type a valid food cost</p>
                     <h3 class="inline-block mt-5 mr-6 mt-7">Rent:</h3>
                     <input class="py-2 pl-2 rounded bg-gray-300" type="number" name="" id="rent-cost"><br>
+                    <p id="error-rent" class="text-center text-red-600 error">please type a valid rent cost</p>
                     <h3 class="inline-block mt-5 mt-7">Clothes:</h3>
                     <input class="py-2 pl-2 rounded bg-gray-300" type="number" name="" id="cloth-cost">
+                    <p id="error-cloth" class="text-center text-red-600 error">please type a valid cloth cost</p>
 
                     <!----------------------
                          Calculate button
@@ -54,6 +58,7 @@
                          total Expanses
                     ---------------------->
                     <h2 class="text-xl font-bold text-center mt-5">Total Expenses : <span id="total-expanses">00</span></h2>
+                    <p id="error-expanses" class="text-center text-red-600 error">please Increase your income</p>
                     <h2 class="text-xl font-bold text-center mt-5">Balance : <span id="balance">00</span></h2>
 
                     <!---------------------
@@ -62,14 +67,18 @@
                     <h3 class="inline-block mt-5 mt-10">Save:</h3>
                     <input class="py-2 pl-2 rounded bg-gray-300 lg:w-2/6 w-1/5" type="number" name="" id="saving-input"><h2 class="inline-block text-xl font-bold mx-2">%</h2>
                     <button id="save-btn" class="py-2 lg:px-5 px-4 bg-blue-400 rounded-lg mt-5 text-white" >Save</button>
+                    <p id="error-save" class="text-center text-red-600 error">please type a valid percentage Number</p>
                     <h3 class="text-xl font-bold text-center mt-5">Saving Amount : <span id="saving-amount">00</span></h3>
                     <h3 class="text-xl font-bold text-center mt-5">Remaining Balance : <span id="remaining-balance">00</span></h3>
                 </div>
             </div>
         </section>
     </main>
+    
+    <footer class="my-10">
+        <p class="text-center opacity-50">Copyright © 2022 money bank.com</p>
+    </footer>
 
-
-    <script src="money-bank.js"></script>
+    <script src="js/money-bank.js"></script>
 </body>
 </html>
