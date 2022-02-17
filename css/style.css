@@ -8,3 +8,9 @@ body {
   display: none;
   font-size: 13px;
 }
+.btn {
+  background-color: #040436;
+}
+.secondary-color {
+  color: #040436;
+}

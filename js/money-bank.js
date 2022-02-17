@@ -24,7 +24,7 @@ function totalExpenses(){
     const totalExpanses = document.getElementById("total-expanses");
     const income = getValue("total-income");
     const newTotalExpanses = foodCostValue + rentCostValue + clothCostValue;
-    
+    console.log(newTotalExpanses);
     if(newTotalExpanses < income){
         const totalExpansesValue = totalExpanses.innerText = parseFloat(foodCostValue) + parseFloat(rentCostValue) + parseFloat(clothCostValue);
         document.getElementById("error-expanses").style.display = "none";
