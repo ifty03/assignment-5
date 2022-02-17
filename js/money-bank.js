@@ -24,7 +24,7 @@ function totalExpenses(){
     const totalExpanses = document.getElementById("total-expanses");
     const income = getValue("total-income");
     const newTotalExpanses = foodCostValue + rentCostValue + clothCostValue;
-    console.log(newTotalExpanses);
+
     if(newTotalExpanses < income){
         const totalExpansesValue = totalExpanses.innerText = parseFloat(foodCostValue) + parseFloat(rentCostValue) + parseFloat(clothCostValue);
         document.getElementById("error-expanses").style.display = "none";
@@ -102,8 +102,9 @@ document.getElementById("calculate-btn").addEventListener("click",function(){
     call for saving
 ------------------------*/
 document.getElementById("save-btn").addEventListener("click",function(){
-    const savingAmount = getValue("saving-amount");
-    if(savingAmount > 0){
+    const savingInput = getValue("saving-input");
+
+    if(savingInput > 0){
         totalSaving()
     }
     else{
