@@ -62,11 +62,22 @@ function totalSaving(){
     const totalIncomeValue =getValue("total-income");
 
     const savingInputValue = getValue("saving-input");
+
+    const totalBalance = getInnerText("balance");
     
     const savingAmount = document.getElementById("saving-amount");
 
-    const savingAmountValue = savingAmount.innerText = (totalIncomeValue / 100) * savingInputValue;
-    return savingAmountValue;
+    const newSavingAmount = (totalIncomeValue / 100) * savingInputValue;
+
+    if(newSavingAmount < totalBalance){
+        const savingAmountValue = savingAmount.innerText = (totalIncomeValue / 100) * savingInputValue;
+        document.getElementById("error-saveing-amount").style.display = "none";
+        return savingAmountValue;
+    }
+    else{
+        document.getElementById("error-saveing-amount").style.display = "block";
+    }
+ 
 }
 
 /*-------------------------
