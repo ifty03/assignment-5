@@ -1,5 +1,4 @@
 
-
 /*-------------------------------------
     catch InputValue using function
 -------------------------------------*/
@@ -19,17 +18,11 @@ function getInnerText(isName){
     total Expenses
 ------------------------*/
 function totalExpenses(){
-
     const foodCostValue = getValue("food-cost");
-
     const rentCostValue = getValue("rent-cost");
-
     const clothCostValue = getValue("cloth-cost");
-
     const totalExpanses = document.getElementById("total-expanses");
-
     const income = getValue("total-income");
-
     const newTotalExpanses = foodCostValue + rentCostValue + clothCostValue;
     
     if(newTotalExpanses < income){
@@ -40,8 +33,6 @@ function totalExpenses(){
     else{
         document.getElementById("error-expanses").style.display = "block";
     }
-
- 
 }
 
 /*------------------
@@ -60,13 +51,9 @@ return balanceValue;
 -----------------*/
 function totalSaving(){
     const totalIncomeValue =getValue("total-income");
-
     const savingInputValue = getValue("saving-input");
-
     const totalBalance = getInnerText("balance");
-    
     const savingAmount = document.getElementById("saving-amount");
-
     const newSavingAmount = (totalIncomeValue / 100) * savingInputValue;
 
     if(newSavingAmount < totalBalance){
@@ -166,6 +153,7 @@ document.getElementById("cloth-cost").addEventListener("keyup",function(){
         errorRemove("error-cloth"); 
     }
 })
+
 /* rent saving Error heandelar */
 document.getElementById("saving-input").addEventListener("keyup",function(){
     const totalValue = getValue("saving-input");
